@@ -1,0 +1,333 @@
+{
+  "states": [
+    {
+      "name": "Alabama",
+      "code": "AL",
+      "service": "Alabama Votes",
+      "url": "https://myinfo.alabamavotes.gov/voterview"
+    },
+    {
+      "name": "Alaska",
+      "code": "AK",
+      "service": "Alaska Division of Elections",
+      "url": "https://myvoterinformation.alaska.gov"
+    },
+    {
+      "name": "Arizona",
+      "code": "AZ",
+      "service": "Arizona Secretary of State, Voter Information Portal",
+      "url": "https://my.arizona.vote/AbsenteeTracker.aspx",
+      "provisional": "https://my.arizona.vote/provisionalsearch.aspx"
+    },
+    {
+      "name": "Arkansas",
+      "code": "AR",
+      "service": "Arkansas Secretary of State",
+      "url": "https://www.voterview.ar-nova.org/VoterView",
+      "vsa": "Kind of! If you go to Arkansas's Voter View page and fill in the Registration Information section, it will show your voter registration status and the status of a mail-in ballot request. If you have questions about the status of your ballot you may contact your county clerk’s office or email voterservices@sos.arkansas.gov. Check your ballot status below"
+    },
+    {
+      "name": "California",
+      "code": "CA",
+      "service": "California Secretary of State, Where's My Ballot?",
+      "url": "https://california.ballottrax.net/voter/"
+    },
+    {
+      "name": "Colorado",
+      "code": "CO",
+      "service": "Colorado Ballottrax",
+      "url": "https://colorado.ballottrax.net/voter/"
+    },
+    {
+      "name": "Connecticut",
+      "code": "CT",
+      "service": "Connecticut Secretary of State",
+      "url": "https://portaldir.ct.gov/sots/LookUp.aspx",
+      "note": "You can also email lead@ct.gov or call at (860) 509-6100."
+    },
+    {
+      "name": "Delaware",
+      "code": "DE",
+      "service": "Delaware Department of Elections",
+      "url": "https://ivote.de.gov/VoterView"
+    },
+    {
+      "name": "Florida",
+      "code": "FL",
+      "service": "Florida Department of State",
+      "url": "https://registration.elections.myflorida.com/CheckVoterStatus"
+    },
+    {
+      "name": "Georgia",
+      "code": "GA",
+      "service": "Georgia Secretary of State, My Voter Page",
+      "url": "https://www.mvp.sos.ga.gov"
+    },
+    {
+      "name": "Hawaii",
+      "code": "HI",
+      "service": "Hawaii Office of Elections",
+      "url": "https://ballotstatus.hawaii.gov"
+    },
+    {
+      "name": "Idaho",
+      "code": "ID",
+      "service": "Idaho Secretary of State",
+      "url": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx"
+    },
+    {
+      "name": "Illinois",
+      "code": "IL",
+      "service": "N/A",
+      "url": "",
+      "military": "https://move.elections.il.gov",
+      "provisional": "https://elections.il.gov/VotingAndRegistrationSystems/ProvisionalBallotSearch.aspx",
+      "vsa": "Some counties allow ballot tracking, so check with your local elections office.",
+      "vsa_link": "Contact your local election official",
+      "vsa_url": "https://elections.il.gov/VotingAndRegistrationSystems/EarlyVotingLocationsSearch.aspx?MID=A3RIOjKplz4%3d&T=637326443463359326"
+    },
+    {
+      "name": "Indiana",
+      "code": "IN",
+      "service": "Indiana Secretary of State, Voter Portal",
+      "url": "https://indianavoters.in.gov",
+      "note": "It is unclear if you can check the status of your absentee ballot or not.",
+      "vsa": "No. So make sure you send your ballot back or drop your ballot off as early as possible."
+    },
+    {
+      "name": "Iowa",
+      "code": "IA",
+      "service": "Iowa Secretary of State",
+      "url": "https://sos.iowa.gov/elections/absenteeballotstatus/absentee/search"
+    },
+    {
+      "name": "Kansas",
+      "code": "KS",
+      "service": "Kansas Secretary of State, VoterView",
+      "url": "https://myvoteinfo.voteks.org/voterview"
+    },
+    {
+      "name": "Kentucky",
+      "code": "KY",
+      "service": "Kentucky State Board of Elections",
+      "url": "https://vrsws.sos.ky.gov/vic/"
+    },
+    {
+      "name": "Louisiana",
+      "code": "LA",
+      "service": "Louisiana Secretary of State, Geaux Vote",
+      "url": "https://voterportal.sos.la.gov"
+    },
+    {
+      "name": "Maine",
+      "code": "ME",
+      "service": "Maine Secretary of State",
+      "url": "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/ballot_status.pl"
+    },
+    {
+      "name": "Maryland",
+      "code": "MD",
+      "service": "Maryland Board of Elections",
+      "url": "https://voterservices.elections.maryland.gov/VoterSearch"
+    },
+    {
+      "name": "Massachusetts",
+      "code": "MA",
+      "service": "Secretary of the Commonwealth of Massachusetts",
+      "url": "https://www.sec.state.ma.us/wheredoivotema/track/trackmyballot.aspx"
+    },
+    {
+      "name": "Michigan",
+      "code": "MI",
+      "service": "Michigan Department of State, Voter Information Center",
+      "url": "https://mvic.sos.state.mi.us/Voter/Index"
+    },
+    {
+      "name": "Minnesota",
+      "code": "MN",
+      "service": "Minnesota Secretary of State",
+      "url": "https://mnvotes.sos.state.mn.us/AbsenteeBallotStatus.aspx"
+    },
+    {
+      "name": "Mississippi",
+      "code": "MS",
+      "service": "",
+      "url": "",
+      "note": "You can check the status of your absentee ballot by contacting your election official.",
+      "source": "https://www.sos.ms.gov/MSCountyElectionInfo/"
+    },
+    {
+      "name": "Missouri",
+      "code": "MO",
+      "service": "",
+      "url": "",
+      "note": "If you mail, fax or email your ballot, you can confirm that your ballot was received by your local election authority by contacting the office at elections@sos.mo.gov or (866) 868-3245."
+    },
+    {
+      "name": "Montana",
+      "code": "MT",
+      "service": "My Voter Page",
+      "url": "https://app.mt.gov/voterinfo/"
+    },
+    {
+      "name": "Nebraska",
+      "code": "NE",
+      "service": "Nebraska Voter Information Lookup",
+      "url": "https://www.votercheck.necvr.ne.gov/voterview"
+    },
+    {
+      "name": "Nevada",
+      "code": "NV",
+      "service": "Nevada Secretary of State",
+      "url": "https://www.nvsos.gov/votersearch/"
+    },
+    {
+      "name": "New Hampshire",
+      "code": "NH",
+      "service": "New Hampshire Secretary of State, Voter Information Look-up",
+      "url": "https://app.sos.nh.gov/Public/AbsenteeBallot.aspx"
+    },
+    {
+      "name": "New Jersey",
+      "code": "NJ",
+      "service": "New Jersey Voter Information Portal",
+      "url": "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml"
+    },
+    {
+      "name": "New Mexico",
+      "code": "NM",
+      "service": "New Mexico Secretary of State",
+      "url": "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx?tab=AbsenteeTracker",
+      "vsa": "For voters using an absentee ballot, Intelligent Mail Barcodes will be used on all mailed ballots. This technology gives voters detailed information about the status of their ballot (when their application was received, when their ballot was sent to them, when it was received by their county clerk, etc.). This will allow you to track your absentee ballot from the application stage all the way to when it’s counted by your county clerk."
+    },
+    {
+      "name": "New York",
+      "code": "NY",
+      "service": "New York State Board of Elections",
+      "url": "https://nysballot.elections.ny.gov/TrackMyBallot/Search"
+    },
+    {
+      "name": "North Carolina",
+      "code": "NC",
+      "service": "North Carolina State Board of Elections, Ballottrax",
+      "url": "https://northcarolina.ballottrax.net/voter/"
+    },
+    {
+      "name": "North Dakota",
+      "code": "ND",
+      "service": "North Dakota Secretary of State",
+      "url": "https://vip.sos.nd.gov/AbsenteeTracker.aspx"
+    },
+    {
+      "name": "Ohio",
+      "code": "OH",
+      "service": "Ohio Secretary of State",
+      "url": "https://www.sos.state.oh.us/elections/voters/toolkit/ballot-tracking/",
+      "note": "Each county has its own online tool for tracking your ballot"
+    },
+    {
+      "name": "Oklahoma",
+      "code": "OK",
+      "service": "Oklahoma State Election Board, OK Voter Portal",
+      "url": "https://okvoterportal.okelections.us"
+    },
+    {
+      "name": "Oregon",
+      "code": "OR",
+      "service": "Oregon Secretary of State",
+      "url": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do"
+    },
+    {
+      "name": "Pennsylvania",
+      "code": "PA",
+      "service": "Pennsylvania Department of State",
+      "url": "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx",
+      "provisional": "https://www.pavoterservices.pa.gov/Pages/ProvisionalBallotSearch.aspx"
+    },
+    {
+      "name": "Rhode Island",
+      "code": "RI",
+      "service": "Rhode Island Department of State",
+      "url": "https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=3"
+    },
+    {
+      "name": "South Carolina",
+      "code": "SC",
+      "service": "South Carolina Election Commission",
+      "url": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=AbsenteeInfo",
+      "provisional": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=ProvisionalBallotInfo"
+    },
+    {
+      "name": "South Dakota",
+      "code": "SD",
+      "service": "South Dakota Secretary of State",
+      "url": "https://vip.sdsos.gov/VIPLogin.aspx"
+    },
+    {
+      "name": "Tennessee",
+      "code": "TN",
+      "service": "Tennessee Secretary of State",
+      "url": "https://tnmap.tn.gov/voterlookup/"
+    },
+    {
+      "name": "Texas",
+      "code": "TX",
+      "service": "",
+      "url": "",
+      "note": "If you are a Military voter or voting from overseas, you can track your ballot through the link here. If you are voting by mail for another reason and want to track the status of your ballot, contact your county elections office.",
+      "military": "https://webservices.sos.state.tx.us/FPCA/index.aspx",
+      "contact": "https://www.sos.texas.gov/elections/voter/votregduties.shtml"
+    },
+    {
+      "name": "Utah",
+      "code": "UT",
+      "service": "Utah Lt. Govenor, Track My Ballot",
+      "url": "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot"
+    },
+    {
+      "name": "Vermont",
+      "code": "VT",
+      "service": "Vermont Secretary of State, My Voter Page",
+      "url": "https://mvp.vermont.gov/"
+    },
+    {
+      "name": "Virginia",
+      "code": "VA",
+      "service": "Commonwealth of Virginia, Ballot Scout",
+      "url": "https://ballotscout.org/partners/5a8f1161-23a0-4fa0-8ec9-3e090e97e9b3/va-search"
+    },
+    {
+      "name": "Washington",
+      "code": "WA",
+      "service": "Vote WA",
+      "url": "https://voter.votewa.gov/WhereToVote.aspx"
+    },
+    {
+      "name": "Washington, D.C.",
+      "code": "DC",
+      "service": "District of Columbia Board of Elections",
+      "url": "https://www.dcboe.org/Voters/Absentee-Voting/Track-Absentee-Ballot"
+    },
+    {
+      "name": "West Virginia",
+      "code": "WV",
+      "service": "West Virginia Secretary of State",
+      "url": "https://services.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking"
+    },
+    {
+      "name": "Wisconsin",
+      "code": "WI",
+      "service": "MyVote Wisconsin",
+      "url": "https://myvote.wi.gov/en-us/TrackMyBallot"
+    },
+    {
+      "name": "Wyoming",
+      "code": "WY",
+      "service": "Email county clerk",
+      "url": "",
+      "note": "Wyoming says to contact your county clerk for the status of your absentee ballot.",
+      "source": "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx",
+      "contact": "https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf"
+    }
+  ]
+}
