@@ -67,264 +67,69 @@ var simplemaps_usmap_mapdata = {
     state_image_position: "",
     location_image_url: "",
   },
+
+  // prettier-ignore
   state_specific: {
-    HI: {
-      name: "Hawaii",
-      url: "https://ballotstatus.hawaii.gov",
-      description: "Hawaii Office of Elections",
-    },
     AK: {
       name: "Alaska",
       url: "https://myvoterinformation.alaska.gov",
       description: "Alaska Division of Elections",
+    },
+    AL: {
+      name: "Alabama",
+      url: "https://myinfo.alabamavotes.gov/voterview",
+      description: "Alabama Votes",
+    },
+    AR: {
+      name: "Arkansas",
+      url: "https://www.voterview.ar-nova.org/VoterView",
+      description: "Arkansas Secretary of State",
+    },
+    AS: {
+      name: "American Samoa",
+      hide: "yes",
+      url: "",
+      description: "",
+    },
+    AZ: {
+      name: "Arizona",
+      url: "https://my.arizona.vote/AbsenteeTracker.aspx",
+      description: "Arizona Secretary of State, Voter Information Portal",
+    },
+    CA: {
+      name: "California",
+      url: "https://california.ballottrax.net/voter/",
+      description: "California Secretary of State, Where's My Ballot?",
+    },
+    CO: {
+      name: "Colorado",
+      url: "https://colorado.ballottrax.net/voter/",
+      description: "Colorado Ballottrax",
+    },
+    CT: {
+      name: "Connecticut",
+      url: "https://portaldir.ct.gov/sots/LookUp.aspx",
+      description: "Connecticut Secretary of State",
+    },
+    DC: {
+      name: "District of Columbia",
+      url: "https://www.dcboe.org/Voters/Absentee-Voting/Track-Absentee-Ballot",
+      description: "District of Columbia Board of Elections",
+    },
+    DE: {
+      name: "Delaware",
+      url: "https://ivote.de.gov/VoterView",
+      description: "Delaware Department of Elections",
     },
     FL: {
       name: "Florida",
       url: "https://registration.elections.myflorida.com/CheckVoterStatus",
       description: "Florida Department of State",
     },
-    NH: {
-      name: "New Hampshire",
-      url: "https://app.sos.nh.gov/Public/AbsenteeBallot.aspx",
-      description:
-        "New Hampshire Secretary of State, Voter Information Look-up",
-    },
-    VT: {
-      name: "Vermont",
-      url: "https://mvp.vermont.gov/",
-      description: "Vermont Secretary of State, My Voter Page",
-    },
-    ME: {
-      name: "Maine",
-      url:
-        "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/ballot_status.pl",
-      description: "Maine Secretary of State",
-    },
-    RI: {
-      name: "Rhode Island",
-      url: "Rhode Island Department of State",
-      description:
-        "https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=3",
-    },
-    NY: {
-      name: "New York",
-      url: "https://nysballot.elections.ny.gov/TrackMyBallot/Search",
-      description: "New York State Board of Elections",
-    },
-    PA: {
-      name: "Pennsylvania",
-      url: "",
-      description: "",
-    },
-    NJ: {
-      name: "New Jersey",
-      url: "",
-      description: "",
-    },
-    DE: {
-      name: "Delaware",
-      url: "",
-      description: "",
-    },
-    MD: {
-      name: "Maryland",
-      url: "",
-      description: "",
-    },
-    VA: {
-      name: "Virginia",
-      url: "",
-      description: "",
-    },
-    WV: {
-      name: "West Virginia",
-      url: "",
-      description: "",
-    },
-    OH: {
-      name: "Ohio",
-      url: "",
-      description: "",
-    },
-    IN: {
-      name: "Indiana",
-      url: "",
-      description: "",
-    },
-    IL: {
-      name: "Illinois",
-      url: "",
-      description: "",
-    },
-    CT: {
-      name: "Connecticut",
-      url: "",
-      description: "",
-    },
-    WI: {
-      name: "Wisconsin",
-      url: "",
-      description: "",
-    },
-    NC: {
-      name: "North Carolina",
-      url: "",
-      description: "",
-    },
-    DC: {
-      name: "District of Columbia",
-      url: "",
-      description: "",
-    },
-    MA: {
-      name: "Massachusetts",
-      url: "",
-      description: "",
-    },
-    TN: {
-      name: "Tennessee",
-      url: "",
-      description: "",
-    },
-    AR: {
-      name: "Arkansas",
-      url: "",
-      description: "",
-    },
-    MO: {
-      name: "Missouri",
-      url: "",
-      description: "",
-    },
     GA: {
       name: "Georgia",
-      url: "",
-      description: "",
-    },
-    SC: {
-      name: "South Carolina",
-      url: "",
-      description: "",
-    },
-    KY: {
-      name: "Kentucky",
-      url: "",
-      description: "",
-    },
-    AL: {
-      name: "Alabama",
-      url: "",
-      description: "",
-    },
-    LA: {
-      name: "Louisiana",
-      url: "",
-      description: "",
-    },
-    MS: {
-      name: "Mississippi",
-      url: "",
-      description: "",
-    },
-    IA: {
-      name: "Iowa",
-      url: "",
-      description: "",
-    },
-    MN: {
-      name: "Minnesota",
-      url: "",
-      description: "",
-    },
-    OK: {
-      name: "Oklahoma",
-      url: "",
-      description: "",
-    },
-    TX: {
-      name: "Texas",
-      url: "",
-      description: "",
-    },
-    NM: {
-      name: "New Mexico",
-      url: "",
-      description: "",
-    },
-    KS: {
-      name: "Kansas",
-      url: "",
-      description: "",
-    },
-    NE: {
-      name: "Nebraska",
-      url: "",
-      description: "",
-    },
-    SD: {
-      name: "South Dakota",
-      url: "",
-      description: "",
-    },
-    ND: {
-      name: "North Dakota",
-      url: "",
-      description: "",
-    },
-    WY: {
-      name: "Wyoming",
-      url: "",
-      description: "",
-    },
-    MT: {
-      name: "Montana",
-      url: "",
-      description: "",
-    },
-    CO: {
-      name: "Colorado",
-      url: "",
-      description: "",
-    },
-    UT: {
-      name: "Utah",
-      url: "",
-      description: "",
-    },
-    AZ: {
-      name: "Arizona",
-      url: "",
-      description: "",
-    },
-    NV: {
-      name: "Nevada",
-      url: "",
-      description: "",
-    },
-    OR: {
-      name: "Oregon",
-      url: "",
-      description: "",
-    },
-    WA: {
-      name: "Washington",
-      url: "",
-      description: "",
-    },
-    CA: {
-      name: "California",
-      url: "",
-      description: "",
-    },
-    MI: {
-      name: "Michigan",
-      url: "",
-      description: "",
-    },
-    ID: {
-      name: "Idaho",
-      url: "",
-      description: "",
+      url: "https://www.mvp.sos.ga.gov",
+      description: "Georgia Secretary of State, My Voter Page",
     },
     GU: {
       name: "Guam",
@@ -332,17 +137,75 @@ var simplemaps_usmap_mapdata = {
       url: "",
       description: "",
     },
-    VI: {
-      name: "Virgin Islands",
-      hide: "yes",
-      url: "",
-      description: "",
+    HI: {
+      name: "Hawaii",
+      url: "https://ballotstatus.hawaii.gov",
+      description: "Hawaii Office of Elections",
     },
-    PR: {
-      name: "Puerto Rico",
-      hide: "yes",
-      url: "",
-      description: "",
+    IA: {
+      name: "Iowa",
+      url: "https://sos.iowa.gov/elections/absenteeballotstatus/absentee/search",
+      description: "Iowa Secretary of State",
+    },
+    ID: {
+      name: "Idaho",
+      url: "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx",
+      description: "Idaho Secretary of State",
+    },
+    IL: {
+      name: "Illinois",
+      url: "https://elections.il.gov/VotingAndRegistrationSystems/ProvisionalBallotSearch.aspx",
+      description: "Provisional Ballots only",
+    },
+    IN: {
+      name: "Indiana",
+      url: "https://indianavoters.in.gov",
+      description: "Indiana Secretary of State, Voter Portal",
+    },
+    KS: {
+      name: "Kansas",
+      url: "https://myvoteinfo.voteks.org/voterview",
+      description: "Kansas Secretary of State, VoterView",
+    },
+    KY: {
+      name: "Kentucky",
+      url: "https://vrsws.sos.ky.gov/vic/",
+      description: "Kentucky State Board of Elections",
+    },
+    LA: {
+      name: "Louisiana",
+      url: "https://voterportal.sos.la.gov",
+      description: "Louisiana Secretary of State, Geaux Vote",
+    },
+    MA: {
+      name: "Massachusetts",
+      url: "https://www.sec.state.ma.us/wheredoivotema/track/trackmyballot.aspx",
+      description: "Secretary of the Commonwealth of Massachusetts",
+    },
+    MD: {
+      name: "Maryland",
+      url: "https://voterservices.elections.maryland.gov/VoterSearch",
+      description: "Maryland Board of Elections",
+    },
+    ME: {
+      name: "Maine",
+      url: "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/ballot_status.pl",
+      description: "Maine Secretary of State",
+    },
+    MI: {
+      name: "Michigan",
+      url: "https://mvic.sos.state.mi.us/Voter/Index",
+      description: "Michigan Department of State, Voter Information Center",
+    },
+    MN: {
+      name: "Minnesota",
+      url: "https://mnvotes.sos.state.mn.us/AbsenteeBallotStatus.aspx",
+      description: "Minnesota Secretary of State",
+    },
+    MO: {
+      name: "Missouri",
+      url: "https://movotesportal.sos.mo.gov/movotes/voter/login.aspx",
+      description: "Military only",
     },
     MP: {
       name: "Northern Mariana Islands",
@@ -350,11 +213,147 @@ var simplemaps_usmap_mapdata = {
       url: "",
       description: "",
     },
-    AS: {
-      name: "American Samoa",
+    MS: {
+      name: "Mississippi",
+      url: "https://www.sos.ms.gov/MSCountyElectionInfo/",
+      description: "You can check the status of your absentee ballot by contacting your election official",
+    },
+    MT: {
+      name: "Montana",
+      url: "https://app.mt.gov/voterinfo/",
+      description: "My Voter Page",
+    },
+    NC: {
+      name: "North Carolina",
+      url: "https://northcarolina.ballottrax.net/voter/",
+      description: "North Carolina State Board of Elections, Ballottrax",
+    },
+    ND: {
+      name: "North Dakota",
+      url: "https://vip.sos.nd.gov/AbsenteeTracker.aspx",
+      description: "North Dakota Secretary of State",
+    },
+    NE: {
+      name: "Nebraska",
+      url: "https://www.votercheck.necvr.ne.gov/voterview",
+      description: "Nebraska Voter Information Lookup",
+    },
+    NH: {
+      name: "New Hampshire",
+      url: "https://app.sos.nh.gov/Public/AbsenteeBallot.aspx",
+      description: "New Hampshire Secretary of State, Voter Information Look-up",
+    },
+    NJ: {
+      name: "New Jersey",
+      url: "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml",
+      description: "New Jersey Voter Information Portal",    
+    },
+    NM: {
+      name: "New Mexico",
+      url: "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx?tab=AbsenteeTracker",
+      description: "New Mexico Secretary of State",
+    },
+    NV: {
+      name: "Nevada",
+      url: "https://www.nvsos.gov/votersearch/",
+      description: "Nevada Secretary of State",
+    },
+    NY: {
+      name: "New York",
+      url: "https://nysballot.elections.ny.gov/TrackMyBallot/Search",
+      description: "New York State Board of Elections",
+    },
+    OH: {
+      name: "Ohio",
+      url: "https://www.sos.state.oh.us/elections/voters/toolkit/ballot-tracking/",
+      description: "Ohio Secretary of State (each county has its own tool)",
+    },
+    OK: {
+      name: "Oklahoma",
+      url: "https://okvoterportal.okelections.us",
+      description: "Oklahoma State Election Board, OK Voter Portal",
+    },
+    OR: {
+      name: "Oregon",
+      url: "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do",
+      description: "Oregon Secretary of State",
+    },
+    PA: {
+      name: "Pennsylvania",
+      url: "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx",
+      description: "Pennsylvania Department of State",
+    },
+    PR: {
+      name: "Puerto Rico",
       hide: "yes",
       url: "",
       description: "",
+    },
+    RI: {
+      name: "Rhode Island",
+      url: "https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=3",
+      description: "Rhode Island Department of State",
+    },
+    SC: {
+      name: "South Carolina",
+      url: "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=AbsenteeInfo",
+      description: "South Carolina Election Commission",
+    },
+    SD: {
+      name: "South Dakota",
+      url: "https://vip.sdsos.gov/VIPLogin.aspx",
+      description: "South Dakota Secretary of State",
+    },
+    TN: {
+      name: "Tennessee",
+      url: "https://tnmap.tn.gov/voterlookup/",
+      description: "Tennessee Secretary of State",
+    },
+    TX: {
+      name: "Texas",
+      url: "https://webservices.sos.state.tx.us/FPCA/index.aspx",
+      description: "Military only (FPCA Ballot Tracker)",
+    },
+    UT: {
+      name: "Utah",
+      url: "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot",
+      description: "Utah Lt. Govenor, Track My Ballot",
+    },
+    VA: {
+      name: "Virginia",
+      url: "https://ballotscout.org/partners/5a8f1161-23a0-4fa0-8ec9-3e090e97e9b3/va-search",
+      description: "Commonwealth of Virginia, Ballot Scout",
+    },
+    VI: {
+      name: "Virgin Islands",
+      hide: "yes",
+      url: "",
+      description: "",
+    },
+    VT: {
+      name: "Vermont",
+      url: "https://mvp.vermont.gov/",
+      description: "Vermont Secretary of State, My Voter Page",
+    },
+    WA: {
+      name: "Washington",
+      url: "https://voter.votewa.gov/WhereToVote.aspx",
+      description: "Vote WA",    
+    },
+    WI: {
+      name: "Wisconsin",
+      url: "https://myvote.wi.gov/en-us/TrackMyBallot",
+      description: "MyVote Wisconsin",
+    },
+    WV: {
+      name: "West Virginia",
+      url: "https://services.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking",
+      description: "West Virginia Secretary of State",
+    },
+    WY: {
+      name: "Wyoming",
+      url: "https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf",
+      description: "Email county clerk",
     },
   },
   locations: {},
