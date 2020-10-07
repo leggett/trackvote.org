@@ -611,7 +611,7 @@
       wordState.classList.add("on");
     }
 
-    function clickOn(el) {
+    function gotoState(el) {
       let state = el.id || el.getAttribute("data-state");
       // console.log(state, trackers[state].url);
       location.href = trackers[state].url;
@@ -645,7 +645,7 @@
         addOnFromState(el);
       });
       el.addEventListener("click", function () {
-        clickOn(el);
+        gotoState(el);
       });
     });
   </script>
