@@ -628,12 +628,12 @@
       el.addEventListener("mouseleave", function () {
         removeAllOn();
       });
-      // el.addEventListener("touchstart", function () {
-      //   removeAllOn();
-      //   addOnFromList(el);
-      // });
+      el.addEventListener("touchstart", function () {
+        removeAllOn();
+        addOnFromList(el);
+      });
       el.addEventListener("click", function () {
-        clickOn(el);
+        gotoState(el);
       });
     });
 
