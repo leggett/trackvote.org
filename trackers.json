@@ -1,5 +1,5 @@
 {
-  "states": [
+  "trackers": [
     {
       "name": "Alabama",
       "code": "AL",
@@ -30,7 +30,7 @@
       "name": "California",
       "code": "CA",
       "service": "California Secretary of State, Where's My Ballot?",
-      "url": "https://california.ballottrax.net/voter/"
+      "url": "#CA"
     },
     {
       "name": "Colorado",
