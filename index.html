@@ -620,6 +620,7 @@
       location.href = trackers[state].url;
     }
 
+    // Setup event listeners words
     wordStates.forEach(function (el) {
       el.addEventListener("mouseenter", function () {
         addOnFromList(el);
@@ -627,15 +628,16 @@
       el.addEventListener("mouseleave", function () {
         removeAllOn();
       });
-      el.addEventListener("touchstart", function () {
-        removeAllOn();
-        addOnFromList(el);
-      });
+      // el.addEventListener("touchstart", function () {
+      //   removeAllOn();
+      //   addOnFromList(el);
+      // });
       el.addEventListener("click", function () {
         clickOn(el);
       });
     });
 
+    // Setup event listeners map
     svgStates.forEach(function (el) {
       el.addEventListener("mouseenter", function () {
         addOnFromState(el);
