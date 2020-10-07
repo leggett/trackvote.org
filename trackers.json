@@ -325,7 +325,7 @@
       "code": "WY",
       "service": "Email county clerk",
       "url": "",
-      "note": "Wyoming says to contact your county clerk for the status of your absentee ballot.",
+      "note": "Contact your county clerk for the status of your absentee ballot.",
       "source": "https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx",
       "contact": "https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf"
     }
