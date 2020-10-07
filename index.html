@@ -16,18 +16,21 @@
 
       /* Header */
       #header {
-        margin: 15vh auto;
+        margin: 20vh auto 50px auto;
         width: fit-content;
+        max-width: 450px;
+        text-align: center;
       }
       #title {
-        font-size: 3em;
-        letter-spacing: 0.1em;
+        font-size: 3rem;
+        letter-spacing: 0.07em;
         font-family: Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
       }
       #tagline {
-        font-size: 18px;
+        font-size: 1.2rem;
         opacity: 0.6;
-        margin-bottom: 200px;
+        margin-bottom: 30vh;
         line-height: 1.6em;
       }
 
@@ -90,24 +93,60 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #444;
       }
+
+      /* Mobile */
+      @media screen and (max-device-width: 440px) {
+        html {
+          font-size: 40px;
+        }
+        #logo {
+          width: 250px;
+          height: 250px;
+          margin: 0 auto;
+        }
+        #header {
+          max-width: 90%;
+        }
+        #title {
+          letter-spacing: 0.05em;
+        }
+        .list-of-states {
+          columns: 300px auto;
+        }
+        .list-of-states li {
+          padding: 16px;
+        }
+      }
+      @media screen and (min-device-width: 441px) and (max-device-width: 800px) {
+        html {
+          font-size: 24px;
+        }
+        #header {
+          margin: 5vh auto 50px auto;
+          max-width: 650px;
+        }
+        #tagline {
+          margin-bottom: 50px;
+        }
+      }
     </style>
   </head>
   <body>
     <div id="header">
       <!-- prettier-ignore -->
-      <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg id="logo" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M81.5 59.5H90.5C92.8906 59.5 95 61.6094 95 64V77.5C95 80.0312 92.8906 82 90.5 82H9.5C6.96875 82 5 80.0312 5 77.5V64C5 61.6094 6.96875 59.5 9.5 59.5H18.5V68.5H15.2656C14.5625 68.5 14 69.0625 14 69.625V71.875C14 72.5781 14.5625 73 15.2656 73H84.5938C85.2969 73 86 72.5781 86 71.875V69.625C86 69.0625 85.2969 68.5 84.5938 68.5H81.5V59.5ZM77 23.6406V68.5H23V23.6406C23 21.1094 24.9688 19 27.5 19H72.3594C74.8906 19 77 21.1094 77 23.6406ZM58.956 49.4088L64.6242 55.0673C65.1343 55.6332 65.1343 56.482 64.5675 56.9912L62.9804 58.5756C62.4703 59.1415 61.6201 59.1415 61.0533 58.5756L55.4418 52.9737C55.1584 52.6907 55.045 52.3512 55.045 52.0117V51.0498C53.0045 52.6341 50.5105 53.5395 47.7898 53.5395C41.2714 53.5395 36 48.2771 36 41.7698C36 35.319 41.2714 30 47.7898 30C54.2515 30 59.5795 35.319 59.5795 41.7698C59.5795 44.5424 58.616 47.0322 57.0856 49.0127H57.9925C58.3325 49.0127 58.6726 49.1824 58.956 49.4088ZM40.5345 41.7698C40.5345 45.7873 43.7654 49.0127 47.7898 49.0127C51.7575 49.0127 55.045 45.7873 55.045 41.7698C55.045 37.8088 51.7575 34.5268 47.7898 34.5268C43.7654 34.5268 40.5345 37.8088 40.5345 41.7698Z" />
       </svg>
 
       <div id="title">trackvote.org</div>
       <div id="tagline">
-        46 states let you track the status of your ballot.<br />
-        Click on your state —> track your vote.
+        46 states let you track the status of your ballot. Click on your state
+        —> track your vote.
       </div>
 
       <!-- prettier-ignore -->
       <a href="#map">
-        <svg width="63" height="36" viewBox="0 0 63 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="more" width="63" height="36" viewBox="0 0 63 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.2" fill="white" d="M62.0156 3.625L59.3438 0.8125C58.6406 0.109375 57.5156 0.109375 56.9531 0.8125L31.5 26.2656L5.90625 0.8125C5.34375 0.109375 4.21875 0.109375 3.51562 0.8125L0.84375 3.625C0.140625 4.1875 0.140625 5.3125 0.84375 6.01562L30.2344 35.4062C30.9375 36.1094 31.9219 36.1094 32.625 35.4062L62.0156 6.01562C62.7188 5.3125 62.7188 4.1875 62.0156 3.625Z" />
         </svg>
       </a>
