@@ -30,7 +30,7 @@
       "name": "California",
       "code": "CA",
       "service": "California Secretary of State, Where's My Ballot?",
-      "url": "#CA"
+      "url": "https://california.ballottrax.net/voter/"
     },
     {
       "name": "Colorado",
