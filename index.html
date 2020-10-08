@@ -179,20 +179,16 @@
     const svgStates = document.querySelectorAll("#states > *");
 
     function showState() {
-      console.log('Show state');
       let state = "";
       if (location.hash !== "" && location.hash !== "map") {
         state = location.hash.substring(1);
-        console.log('Hash is a state', state, trackers[state]);
       }
 
       if (trackers[state] !== undefined) {
-        console.log('State has info');
         document.documentElement.classList.add('showState');
         document.querySelector('#info .title').innerText = trackers[state].name;
         document.querySelector('#info .details').innerHTML = trackers[state].html;
       } else {
-        console.log('State does NOT have info');
         document.documentElement.classList.remove('showState');
       }
     }
@@ -251,7 +247,6 @@
         removeAllOn();
       });
       el.addEventListener("click", function () {
-        // console.log(el.classList.contains('off'));
         gotoState(el);
       });
     });
