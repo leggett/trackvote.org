@@ -1,7 +1,7 @@
 html {
-  font-family: "Georgia", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  background-color: #222;
+  background-color: #36c;
   color: #eee;
 }
 body {
@@ -12,14 +12,13 @@ body {
 #header {
   margin: 15vh auto 50px auto;
   width: fit-content;
-  max-width: 450px;
+  max-width: 500px;
   text-align: center;
 }
 #title {
   font-size: 3rem;
-  letter-spacing: 0.07em;
-  font-family: Helvetica, Arial, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 #tagline {
   font-size: 1.2rem;
@@ -37,13 +36,24 @@ svg {
   display: block;
   width: 100%;
 }
+#states * {
+  fill: rgba(34, 34, 34, 0.2);
+  stroke: rgba(204, 204, 204, 0.2);
+  stroke-width: 2px;
+}
+#states circle {
+  stroke-width: 4px !important;
+}
+#states *.off {
+  fill: rgba(0, 0, 0, 0.3);
+}
 #states *.on {
-  fill: #444;
+  fill: rgba(204, 204, 204, 0.2);
   cursor: pointer;
 }
-#states *.on[fill] {
+#states *.on.off {
   cursor: not-allowed;
-  fill: #181818;
+  fill: #111;
 }
 
 /* List of states */
@@ -84,12 +94,12 @@ a:visited {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #292929;
-  border-radius: 10px;
-  border: 3px solid #222;
+  background: rgba(34, 34, 34, 0.2);
+  border-radius: 16px;
+  border: 3px solid transparent;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: rgba(34, 34, 34, 0.4);
 }
 
 /* Mobile */
@@ -107,9 +117,6 @@ a:visited {
   }
   #tagline {
     font-size: 1.4rem;
-  }
-  #title {
-    letter-spacing: 0.05em;
   }
   .list-of-states {
     columns: 300px auto;
