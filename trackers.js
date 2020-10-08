@@ -17,7 +17,7 @@ const trackers = {
     name: "Arkansas",
     url: "https://www.voterview.ar-nova.org/VoterView",
     description: "Arkansas Secretary of State",
-    more: "Kind of! If you go to Arkansas's Voter View page and fill in the Registration Information section, it will show your voter registration status and the status of a mail-in ballot request. If you have questions about the status of your ballot you may contact your county clerk’s office or email voterservices@sos.arkansas.gov. Check your ballot status below",
+    html: "<a href='https://www.voterview.ar-nova.org/VoterView'>Arkansas's Voter View page</a> allows you to check your voter registration status and the status of a mail-in ballot request. If you have questions about the status of your ballot you may contact your county clerk’s office or email voterservices@sos.arkansas.gov.",
   },
   AS: {
     name: "American Samoa",
@@ -89,17 +89,15 @@ const trackers = {
   },
   IL: {
     name: "Illinois",
-    url: "https://elections.il.gov/VotingAndRegistrationSystems/ProvisionalBallotSearch.aspx",
-    military: "https://move.elections.il.gov",
-    description: "Provisional Ballots only",
-    more: "Some counties allow ballot tracking, so check with your local elections office.",
-    more_url: "https://elections.il.gov/ElectionOperations/ElectionAuthorities.aspx"
+    url: "#IL",
+    description: "",
+    html: "If you are a military voter or voting from overseas, you can track your ballot through the <a href='https://move.elections.il.gov'>Illinois MOVE Portal</a>.<br><br> You can check the <a href='https://elections.il.gov/VotingAndRegistrationSystems/ProvisionalBallotSearch.aspx'>status of provisional ballots here</a>. Some counties allow ballot tracking, so check with your <a href='https://elections.il.gov/ElectionOperations/ElectionAuthorities.aspx'>local elections office</a>.",
   },
   IN: {
     name: "Indiana",
-    url: "https://indianavoters.in.gov",
-    description: "Indiana Secretary of State, Voter Portal",
-    more: "It is unclear if you can check the status of your absentee ballot or not."
+    url: "#IN",
+    description: "",
+    html: "It does not appear that Indiana lets you check the status of an absentee ballot. More information on <a href='https://indianavoters.in.gov'>Indiana Secretary of State's Voter Portal</a>."
   },
   KS: {
     name: "Kansas",
@@ -128,8 +126,7 @@ const trackers = {
   },
   ME: {
     name: "Maine",
-    url:
-      "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/ballot_status.pl",
+    url: "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/ballot_status.pl",
     description: "Maine Secretary of State",
   },
   MI: {
@@ -144,9 +141,9 @@ const trackers = {
   },
   MO: {
     name: "Missouri",
-    url: "https://movotesportal.sos.mo.gov/movotes/voter/login.aspx",
-    description: "Military only",
-    more: "If you mail, fax or email your ballot, you can confirm that your ballot was received by your local election authority by contacting the office at elections@sos.mo.gov or (866) 868-3245."
+    url: "#MO",
+    description: "",
+    html: "If you are a military voter or voting from overseas, you can track your ballot through the <a href='https://movotesportal.sos.mo.gov/movotes/voter/login.aspx'>MOvotes Portal</a>.<br><br> If you are voting by mail for another reason, you can confirm that your ballot was received by your local election authority by contacting the office at <a href='mailto:elections@sos.mo.gov'>elections@sos.mo.gov</a> or (866) 868-3245."
   },
   MP: {
     name: "Northern Mariana Islands",
@@ -156,8 +153,9 @@ const trackers = {
   },
   MS: {
     name: "Mississippi",
-    url: "https://www.sos.ms.gov/MSCountyElectionInfo/",
-    description: "You can check the status of your absentee ballot by contacting your election official",
+    url: "#MS",
+    description: "",
+    html: "You can check the status of your absentee ballot by <a href='https://www.sos.ms.gov/MSCountyElectionInfo/'>contacting your election official</a>.",
   },
   MT: {
     name: "Montana",
@@ -254,10 +252,9 @@ const trackers = {
   },
   TX: {
     name: "Texas",
-    url: "https://webservices.sos.state.tx.us/FPCA/index.aspx",
-    description: "Military only (FPCA Ballot Tracker)",
-    more: "If you are a Military voter or voting from overseas, you can track your ballot through the link here. If you are voting by mail for another reason and want to track the status of your ballot, contact your county elections office.",
-    more_url: "https://www.sos.texas.gov/elections/voter/votregduties.shtml"
+    url: "#TX",
+    description: "",
+    html: "If you are a military voter or voting from overseas, you can track your ballot through the <a href='https://webservices.sos.state.tx.us/FPCA/index.aspx'>FPCA Ballot Tracker</a>.<br><br> If you are voting by mail for another reason and want to track the status of your ballot, <a href='https://www.sos.texas.gov/elections/voter/votregduties.shtml'>contact your county elections office</a>."
   },
   UT: {
     name: "Utah",
@@ -297,7 +294,8 @@ const trackers = {
   },
   WY: {
     name: "Wyoming",
-    url: "https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf",
-    description: "Contact your county clerk for the status of your absentee ballot.",
+    url: "#WY",
+    description: "",
+    html: "Contact your <a href='https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf'>county clerk</a> for the status of your absentee ballot."
   },
 };
