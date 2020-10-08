@@ -1,150 +1,16 @@
-<!-- 
-Interactive map + list based on css-tricks.com/svg-map-rollovers/
-Links to each state's ballot tracking found via Google and votesaveamerica.com
--->
 <!DOCTYPE html>
-<html lang="en">
+<!-- prettier-ignore -->
+<html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <title>
       TrackVote.org: How to track your absentee ballot in each state
     </title>
-    <style>
-      html {
-        font-family: "Georgia", sans-serif;
-        font-size: 18px;
-        background-color: #222;
-        color: #eee;
-      }
-      body {
-        padding: 20px 40px;
-      }
-
-      /* Header */
-      #header {
-        margin: 20vh auto 50px auto;
-        width: fit-content;
-        max-width: 450px;
-        text-align: center;
-      }
-      #title {
-        font-size: 3rem;
-        letter-spacing: 0.07em;
-        font-family: Helvetica, Arial, sans-serif;
-        margin-bottom: 20px;
-      }
-      #tagline {
-        font-size: 1.2rem;
-        opacity: 0.6;
-        margin-bottom: 30vh;
-        line-height: 1.6em;
-      }
-
-      /* Map */
-      a[name] {
-        display: block;
-        padding-bottom: 50px;
-      }
-      svg {
-        display: block;
-        width: 100%;
-      }
-      #states *.on {
-        fill: #444;
-        cursor: pointer;
-      }
-      #states *.on[fill] {
-        cursor: not-allowed;
-        fill: #181818;
-      }
-
-      /* List of states */
-      .list-of-states {
-        margin: 100px 0 0 0;
-        padding: 0;
-        columns: 170px auto;
-        column-gap: 16px;
-        list-style: none;
-      }
-      .list-of-states li {
-        padding: 8px;
-        display: inline-block;
-        width: 90%;
-        border-radius: 8px;
-        margin: 4px;
-        cursor: pointer;
-      }
-      .list-of-states li.on {
-        background: #ddd;
-        color: #222;
-      }
-
-      /* Footer */
-      #footer {
-        margin: 100px 0 20px 10px;
-        opacity: 0.4;
-        color: white;
-        font-weight: normal;
-      }
-      a,
-      a:visited {
-        color: white;
-      }
-
-      /* Scrollbar */
-      ::-webkit-scrollbar {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #292929;
-        border-radius: 10px;
-        border: 3px solid #222;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #444;
-      }
-
-      /* Mobile */
-      @media screen and (max-device-width: 440px) {
-        html {
-          font-size: 40px;
-        }
-        #logo {
-          width: 250px;
-          height: 250px;
-          margin: 0 auto;
-        }
-        #header {
-          max-width: 90%;
-        }
-        #title {
-          letter-spacing: 0.05em;
-        }
-        .list-of-states {
-          columns: 300px auto;
-        }
-        .list-of-states li {
-          padding: 16px;
-        }
-      }
-      @media screen and (min-device-width: 441px) and (max-device-width: 800px) {
-        html {
-          font-size: 24px;
-        }
-        #header {
-          margin: 5vh auto 50px auto;
-          max-width: 650px;
-        }
-        #tagline {
-          margin-bottom: 50px;
-        }
-      }
-    </style>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <div id="header">
-      <!-- prettier-ignore -->
       <svg id="logo" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" fill="white" d="M81.5 59.5H90.5C92.8906 59.5 95 61.6094 95 64V77.5C95 80.0312 92.8906 82 90.5 82H9.5C6.96875 82 5 80.0312 5 77.5V64C5 61.6094 6.96875 59.5 9.5 59.5H18.5V68.5H15.2656C14.5625 68.5 14 69.0625 14 69.625V71.875C14 72.5781 14.5625 73 15.2656 73H84.5938C85.2969 73 86 72.5781 86 71.875V69.625C86 69.0625 85.2969 68.5 84.5938 68.5H81.5V59.5ZM77 23.6406V68.5H23V23.6406C23 21.1094 24.9688 19 27.5 19H72.3594C74.8906 19 77 21.1094 77 23.6406ZM58.956 49.4088L64.6242 55.0673C65.1343 55.6332 65.1343 56.482 64.5675 56.9912L62.9804 58.5756C62.4703 59.1415 61.6201 59.1415 61.0533 58.5756L55.4418 52.9737C55.1584 52.6907 55.045 52.3512 55.045 52.0117V51.0498C53.0045 52.6341 50.5105 53.5395 47.7898 53.5395C41.2714 53.5395 36 48.2771 36 41.7698C36 35.319 41.2714 30 47.7898 30C54.2515 30 59.5795 35.319 59.5795 41.7698C59.5795 44.5424 58.616 47.0322 57.0856 49.0127H57.9925C58.3325 49.0127 58.6726 49.1824 58.956 49.4088ZM40.5345 41.7698C40.5345 45.7873 43.7654 49.0127 47.7898 49.0127C51.7575 49.0127 55.045 45.7873 55.045 41.7698C55.045 37.8088 51.7575 34.5268 47.7898 34.5268C43.7654 34.5268 40.5345 37.8088 40.5345 41.7698Z" />
       </svg>
@@ -155,7 +21,6 @@ Links to each state's ballot tracking found via Google and votesaveamerica.com
         Click on your state —> track your vote.
       </div>
 
-      <!-- prettier-ignore -->
       <a href="#map">
         <svg id="more" width="63" height="36" viewBox="0 0 63 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.2" fill="white" d="M62.0156 3.625L59.3438 0.8125C58.6406 0.109375 57.5156 0.109375 56.9531 0.8125L31.5 26.2656L5.90625 0.8125C5.34375 0.109375 4.21875 0.109375 3.51562 0.8125L0.84375 3.625C0.140625 4.1875 0.140625 5.3125 0.84375 6.01562L30.2344 35.4062C30.9375 36.1094 31.9219 36.1094 32.625 35.4062L62.0156 6.01562C62.7188 5.3125 62.7188 4.1875 62.0156 3.625Z" />
@@ -165,7 +30,6 @@ Links to each state's ballot tracking found via Google and votesaveamerica.com
 
     <a name="map"></a>
     <svg viewBox="0 0 940 600" class="svg-states">
-      <!-- prettier-ignore -->
       <g id="states" fill="#222" stroke="#666" stroke-width="2">
           <path id="AK" d="M161.1,453.7l-0.3,85.4l1.6,1l3.1,0.2l1.5-1.1h2.6l0.2,2.9l7,6.8l0.5,2.6l3.4-1.9l0.6-0.2l0.3-3.1 l1.5-1.6l1.1-0.2l1.9-1.5l3.1,2.1l0.6,2.9l1.9,1.1l1.1,2.4l3.9,1.8l3.4,6l2.7,3.9l2.3,2.7l1.5,3.7l5,1.8l5.2,2.1l1,4.4l0.5,3.1 l-1,3.4l-1.8,2.3l-1.6-0.8l-1.5-3.1l-2.7-1.5l-1.8-1.1l-0.8,0.8l1.5,2.7l0.2,3.7l-1.1,0.5l-1.9-1.9l-2.1-1.3l0.5,1.6l1.3,1.8 l-0.8,0.8c0,0-0.8-0.3-1.3-1c-0.5-0.6-2.1-3.4-2.1-3.4l-1-2.3c0,0-0.3,1.3-1,1c-0.6-0.3-1.3-1.5-1.3-1.5l1.8-1.9l-1.5-1.5v-5h-0.8 l-0.8,3.4l-1.1,0.5l-1-3.7l-0.6-3.7l-0.8-0.5l0.3,5.7v1.1l-1.5-1.3l-3.6-6l-2.1-0.5l-0.6-3.7l-1.6-2.9l-1.6-1.1v-2.3l2.1-1.3 l-0.5-0.3l-2.6,0.6l-3.4-2.4l-2.6-2.9l-4.8-2.6l-4-2.6l1.3-3.2v-1.6l-1.8,1.6l-2.9,1.1l-3.7-1.1l-5.7-2.4h-5.5l-0.6,0.5l-6.5-3.9 l-2.1-0.3l-2.7-5.8l-3.6,0.3l-3.6,1.5l0.5,4.5l1.1-2.9l1,0.3l-1.5,4.4l3.2-2.7l0.6,1.6l-3.9,4.4l-1.3-0.3l-0.5-1.9l-1.3-0.8 l-1.3,1.1l-2.7-1.8l-3.1,2.1l-1.8,2.1l-3.4,2.1l-4.7-0.2l-0.5-2.1l3.7-0.6v-1.3l-2.3-0.6l1-2.4l2.3-3.9v-1.8l0.2-0.8l4.4-2.3l1,1.3 h2.7l-1.3-2.6l-3.7-0.3l-5,2.7l-2.4,3.4l-1.8,2.6l-1.1,2.3l-4.2,1.5l-3.1,2.6l-0.3,1.6l2.3,1l0.8,2.1l-2.7,3.2l-6.5,4.2l-7.8,4.2 l-2.1,1.1l-5.3,1.1l-5.3,2.3l1.8,1.3l-1.5,1.5l-0.5,1.1l-2.7-1l-3.2,0.2l-0.8,2.3h-1l0.3-2.4l-3.6,1.3l-2.9,1l-3.4-1.3l-2.9,1.9 h-3.2l-2.1,1.3l-1.6,0.8l-2.1-0.3l-2.6-1.1l-2.3,0.6l-1,1l-1.6-1.1v-1.9l3.1-1.3l6.3,0.6l4.4-1.6l2.1-2.1l2.9-0.6l1.8-0.8l2.7,0.2 l1.6,1.3l1-0.3l2.3-2.7l3.1-1l3.4-0.6l1.3-0.3l0.6,0.5h0.8l1.3-3.7l4-1.5l1.9-3.7l2.3-4.5l1.6-1.5l0.3-2.6l-1.6,1.3l-3.4,0.6 l-0.6-2.4l-1.3-0.3l-1,1l-0.2,2.9l-1.5-0.2l-1.5-5.8l-1.3,1.3l-1.1-0.5l-0.3-1.9l-4,0.2l-2.1,1.1l-2.6-0.3l1.5-1.5l0.5-2.6 l-0.6-1.9l1.5-1l1.3-0.2l-0.6-1.8v-4.4l-1-1l-0.8,1.5h-6.1l-1.5-1.3l-0.6-3.9l-2.1-3.6v-1l2.1-0.8l0.2-2.1l1.1-1.1l-0.8-0.5 l-1.3,0.5l-1.1-2.7l1-5l4.5-3.2l2.6-1.6l1.9-3.7l2.7-1.3l2.6,1.1l0.3,2.4l2.4-0.3l3.2-2.4l1.6,0.6l1,0.6h1.6l2.3-1.3l0.8-4.4 c0,0,0.3-2.9,1-3.4c0.6-0.5,1-1,1-1l-1.1-1.9l-2.6,0.8l-3.2,0.8l-1.9-0.5l-3.6-1.8l-5-0.2l-3.6-3.7l0.5-3.9l0.6-2.4l-2.1-1.8 l-1.9-3.7l0.5-0.8l6.8-0.5h2.1l1,1h0.6l-0.2-1.6l3.9-0.6l2.6,0.3l1.5,1.1l-1.5,2.1l-0.5,1.5l2.7,1.6l5,1.8l1.8-1l-2.3-4.4l-1-3.2 l1-0.8l-3.4-1.9l-0.5-1.1l0.5-1.6l-0.8-3.9l-2.9-4.7l-2.4-4.2l2.9-1.9h3.2l1.8,0.6l4.2-0.2l3.7-3.6l1.1-3.1l3.7-2.4l1.6,1l2.7-0.6 l3.7-2.1l1.1-0.2l1,0.8l4.5-0.2l2.7-3.1h1.1l3.6,2.4l1.9,2.1l-0.5,1.1l0.6,1.1l1.6-1.6l3.9,0.3l0.3,3.7l1.9,1.5l7.1,0.6l6.3,4.2 l1.5-1l5.2,2.6l2.1-0.6l1.9-0.8l4.8,1.9L161.1,453.7z M46,482.6l2.1,5.3l-0.2,1l-2.9-0.3l-1.8-4l-1.8-1.5H39l-0.2-2.6l1.8-2.4 l1.1,2.4l1.5,1.5L46,482.6z M43.4,516.1l3.7,0.8l3.7,1l0.8,1l-1.6,3.7l-3.1-0.2l-3.4-3.6L43.4,516.1z M22.7,502l1.1,2.6 l1.1,1.6l-1.1,0.8l-2.1-3.1V502H22.7z M9,575.1l3.4-2.3l3.4-1l2.6,0.3l0.5,1.6l1.9,0.5l1.9-1.9l-0.3-1.6l2.7-0.6l2.9,2.6 l-1.1,1.8l-4.4,1.1l-2.7-0.5l-3.7-1.1l-4.4,1.5l-1.6,0.3L9,575.1z M57.9,570.6l1.6,1.9l2.1-1.6l-1.5-1.3L57.9,570.6z M60.8,573.6l1.1-2.3l2.1,0.3l-0.8,1.9H60.8z M84.4,571.7l1.5,1.8l1-1.1l-0.8-1.9L84.4,571.7z M93.2,559.2l1.1,5.8l2.9,0.8 l5-2.9l4.4-2.6l-1.6-2.4l0.5-2.4l-2.1,1.3l-2.9-0.8l1.6-1.1l1.9,0.8l3.9-1.8l0.5-1.5l-2.4-0.8l0.8-1.9l-2.7,1.9l-4.7,3.6l-4.8,2.9L93.2,559.2z M135.5,539.4l2.4-1.5l-1-1.8l-1.8,1L135.5,539.4z" />
           <path id="HI" d="M233.1,519.3l1.9-3.6l2.3-0.3l0.3,0.8l-2.1,3.1H233.1z M243.3,515.6l6.1,2.6l2.1-0.3l1.6-3.9 l-0.6-3.4l-4.2-0.5l-4,1.8L243.3,515.6z M274,525.6l3.7,5.5l2.4-0.3l1.1-0.5l1.5,1.3l3.7-0.2l1-1.5l-2.9-1.8l-1.9-3.7l-2.1-3.6 l-5.8,2.9L274,525.6z M294.2,534.5l1.3-1.9l4.7,1l0.6-0.5l6.1,0.6l-0.3,1.3l-2.6,1.5l-4.4-0.3L294.2,534.5z M299.5,539.7l1.9,3.9 l3.1-1.1l0.3-1.6l-1.6-2.1l-3.7-0.3V539.7z M306.5,538.5l2.3-2.9l4.7,2.4l4.4,1.1l4.4,2.7v1.9l-3.6,1.8l-4.8,1l-2.4-1.5 L306.5,538.5z M323.1,554.1l1.6-1.3l3.4,1.6l7.6,3.6l3.4,2.1l1.6,2.4l1.9,4.4l4,2.6l-0.3,1.3l-3.9,3.2l-4.2,1.5l-1.5-0.6l-3.1,1.8 l-2.4,3.2l-2.3,2.9l-1.8-0.2l-3.6-2.6l-0.3-4.5l0.6-2.4l-1.6-5.7l-2.1-1.8l-0.2-2.6l2.3-1l2.1-3.1l0.5-1l-1.6-1.8L323.1,554.1z" />
@@ -277,325 +141,18 @@ Links to each state's ballot tracking found via Google and votesaveamerica.com
 
     <div id="footer">
       <!-- <a href="https://simplify.systems">Simplify Systems</a> •  -->
-      By <a href="https://leggett.org">Michael Leggett</a> • 
-      <a
-        href="https://github.com/leggett/trackvote.github.io/blob/main/index.html"
-        target="_blank"
-        >View source code</a
-      >
-      •
-      <a
-        href="https://github.com/leggett/trackvote.github.io/issues/new"
-        target="_blank"
-        >Report issue</a
-      >
+      By <a href="https://leggett.org">@leggett</a> • 
+      <a href="https://github.com/leggett/trackvote.github.io/blob/main/index.html" target="_blank">View source</a> •
+      <a href="https://github.com/leggett/trackvote.github.io/issues/new" target="_blank">Report issue</a>
     </div>
   </body>
 
+  <script src="trackers.js"></script>
+
+  <!-- Interactive map + list based on css-tricks.com/svg-map-rollovers/ -->
   <script>
     const wordStates = document.querySelectorAll(".list-of-states li");
     const svgStates = document.querySelectorAll("#states > *");
-
-    // prettier-ignore
-    const trackers = {
-      AK: {
-        name: "Alaska",
-        url: "https://myvoterinformation.alaska.gov",
-        description: "Alaska Division of Elections",
-      },
-      AL: {
-        name: "Alabama",
-        url: "https://myinfo.alabamavotes.gov/voterview",
-        description: "Alabama Votes",
-      },
-      AR: {
-        name: "Arkansas",
-        url: "https://www.voterview.ar-nova.org/VoterView",
-        description: "Arkansas Secretary of State",
-        more: "Kind of! If you go to Arkansas's Voter View page and fill in the Registration Information section, it will show your voter registration status and the status of a mail-in ballot request. If you have questions about the status of your ballot you may contact your county clerk’s office or email voterservices@sos.arkansas.gov. Check your ballot status below",
-      },
-      AS: {
-        name: "American Samoa",
-        url: "",
-        description: "",
-      },
-      AZ: {
-        name: "Arizona",
-        url: "https://my.arizona.vote/AbsenteeTracker.aspx",
-        description: "Arizona Secretary of State, Voter Information Portal",
-        provisional: "https://my.arizona.vote/provisionalsearch.aspx",
-      },
-      CA: {
-        name: "California",
-        url: "https://california.ballottrax.net/voter/",
-        description: "California Secretary of State, Where's My Ballot?",
-      },
-      CO: {
-        name: "Colorado",
-        url: "https://colorado.ballottrax.net/voter/",
-        description: "Colorado Ballottrax",
-      },
-      CT: {
-        name: "Connecticut",
-        url: "https://portaldir.ct.gov/sots/LookUp.aspx",
-        description: "Connecticut Secretary of State",
-        more: "You can also email lead@ct.gov or call at (860) 509-6100"
-      },
-      DC: {
-        name: "District of Columbia",
-        url: "https://www.dcboe.org/Voters/Absentee-Voting/Track-Absentee-Ballot",
-        description: "District of Columbia Board of Elections",
-      },
-      DE: {
-        name: "Delaware",
-        url: "https://ivote.de.gov/VoterView",
-        description: "Delaware Department of Elections",
-      },
-      FL: {
-        name: "Florida",
-        url: "https://registration.elections.myflorida.com/CheckVoterStatus",
-        description: "Florida Department of State",
-      },
-      GA: {
-        name: "Georgia",
-        url: "https://www.mvp.sos.ga.gov",
-        description: "Georgia Secretary of State, My Voter Page",
-      },
-      GU: {
-        name: "Guam",
-        hide: "yes",
-        url: "",
-        description: "",
-      },
-      HI: {
-        name: "Hawaii",
-        url: "https://ballotstatus.hawaii.gov",
-        description: "Hawaii Office of Elections",
-      },
-      IA: {
-        name: "Iowa",
-        url: "https://sos.iowa.gov/elections/absenteeballotstatus/absentee/search",
-        description: "Iowa Secretary of State",
-      },
-      ID: {
-        name: "Idaho",
-        url: "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx",
-        description: "Idaho Secretary of State",
-      },
-      IL: {
-        name: "Illinois",
-        url: "https://elections.il.gov/VotingAndRegistrationSystems/ProvisionalBallotSearch.aspx",
-        military: "https://move.elections.il.gov",
-        description: "Provisional Ballots only",
-        more: "Some counties allow ballot tracking, so check with your local elections office.",
-        more_url: "https://elections.il.gov/ElectionOperations/ElectionAuthorities.aspx"
-      },
-      IN: {
-        name: "Indiana",
-        url: "https://indianavoters.in.gov",
-        description: "Indiana Secretary of State, Voter Portal",
-        more: "It is unclear if you can check the status of your absentee ballot or not."
-      },
-      KS: {
-        name: "Kansas",
-        url: "https://myvoteinfo.voteks.org/voterview",
-        description: "Kansas Secretary of State, VoterView",
-      },
-      KY: {
-        name: "Kentucky",
-        url: "https://vrsws.sos.ky.gov/vic/",
-        description: "Kentucky State Board of Elections",
-      },
-      LA: {
-        name: "Louisiana",
-        url: "https://voterportal.sos.la.gov",
-        description: "Louisiana Secretary of State, Geaux Vote",
-      },
-      MA: {
-        name: "Massachusetts",
-        url: "https://www.sec.state.ma.us/wheredoivotema/track/trackmyballot.aspx",
-        description: "Secretary of the Commonwealth of Massachusetts",
-      },
-      MD: {
-        name: "Maryland",
-        url: "https://voterservices.elections.maryland.gov/VoterSearch",
-        description: "Maryland Board of Elections",
-      },
-      ME: {
-        name: "Maine",
-        url:
-          "https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/ballot_status.pl",
-        description: "Maine Secretary of State",
-      },
-      MI: {
-        name: "Michigan",
-        url: "https://mvic.sos.state.mi.us/Voter/Index",
-        description: "Michigan Department of State, Voter Information Center",
-      },
-      MN: {
-        name: "Minnesota",
-        url: "https://mnvotes.sos.state.mn.us/AbsenteeBallotStatus.aspx",
-        description: "Minnesota Secretary of State",
-      },
-      MO: {
-        name: "Missouri",
-        url: "https://movotesportal.sos.mo.gov/movotes/voter/login.aspx",
-        description: "Military only",
-        more: "If you mail, fax or email your ballot, you can confirm that your ballot was received by your local election authority by contacting the office at elections@sos.mo.gov or (866) 868-3245."
-      },
-      MP: {
-        name: "Northern Mariana Islands",
-        hide: "yes",
-        url: "",
-        description: "",
-      },
-      MS: {
-        name: "Mississippi",
-        url: "https://www.sos.ms.gov/MSCountyElectionInfo/",
-        description: "You can check the status of your absentee ballot by contacting your election official",
-      },
-      MT: {
-        name: "Montana",
-        url: "https://app.mt.gov/voterinfo/",
-        description: "My Voter Page",
-      },
-      NC: {
-        name: "North Carolina",
-        url: "https://northcarolina.ballottrax.net/voter/",
-        description: "North Carolina State Board of Elections, Ballottrax",
-      },
-      ND: {
-        name: "North Dakota",
-        url: "https://vip.sos.nd.gov/AbsenteeTracker.aspx",
-        description: "North Dakota Secretary of State",
-      },
-      NE: {
-        name: "Nebraska",
-        url: "https://www.votercheck.necvr.ne.gov/voterview",
-        description: "Nebraska Voter Information Lookup",
-      },
-      NH: {
-        name: "New Hampshire",
-        url: "https://app.sos.nh.gov/Public/AbsenteeBallot.aspx",
-        description: "New Hampshire Secretary of State, Voter Information Look-up",
-      },
-      NJ: {
-        name: "New Jersey",
-        url: "https://www.nj.gov/state/elections/vote-track-my-ballot.shtml",
-        description: "New Jersey Voter Information Portal",
-      },
-      NM: {
-        name: "New Mexico",
-        url: "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx?tab=AbsenteeTracker",
-        description: "New Mexico Secretary of State",
-      },
-      NV: {
-        name: "Nevada",
-        url: "https://www.nvsos.gov/votersearch/",
-        description: "Nevada Secretary of State",
-      },
-      NY: {
-        name: "New York",
-        url: "https://nysballot.elections.ny.gov/TrackMyBallot/Search",
-        description: "New York State Board of Elections",
-      },
-      OH: {
-        name: "Ohio",
-        url: "https://www.sos.state.oh.us/elections/voters/toolkit/ballot-tracking/",
-        description: "Ohio Secretary of State (each county has its own tool)",
-      },
-      OK: {
-        name: "Oklahoma",
-        url: "https://okvoterportal.okelections.us",
-        description: "Oklahoma State Election Board, OK Voter Portal",
-      },
-      OR: {
-        name: "Oregon",
-        url: "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do",
-        description: "Oregon Secretary of State",
-      },
-      PA: {
-        name: "Pennsylvania",
-        url: "https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx",
-        description: "Pennsylvania Department of State",
-        provisional: "https://www.pavoterservices.pa.gov/Pages/ProvisionalBallotSearch.aspx"
-      },
-      PR: {
-        name: "Puerto Rico",
-        hide: "yes",
-        url: "",
-        description: "",
-      },
-      RI: {
-        name: "Rhode Island",
-        url: "https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=3",
-        description: "Rhode Island Department of State",
-      },
-      SC: {
-        name: "South Carolina",
-        url: "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=AbsenteeInfo",
-        description: "South Carolina Election Commission",
-        provisional: "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=ProvisionalBallotInfo"
-      },
-      SD: {
-        name: "South Dakota",
-        url: "https://vip.sdsos.gov/VIPLogin.aspx",
-        description: "South Dakota Secretary of State",
-      },
-      TN: {
-        name: "Tennessee",
-        url: "https://tnmap.tn.gov/voterlookup/",
-        description: "Tennessee Secretary of State",
-      },
-      TX: {
-        name: "Texas",
-        url: "https://webservices.sos.state.tx.us/FPCA/index.aspx",
-        description: "Military only (FPCA Ballot Tracker)",
-        more: "If you are a Military voter or voting from overseas, you can track your ballot through the link here. If you are voting by mail for another reason and want to track the status of your ballot, contact your county elections office.",
-        more_url: "https://www.sos.texas.gov/elections/voter/votregduties.shtml"
-      },
-      UT: {
-        name: "Utah",
-        url: "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot",
-        description: "Utah Lt. Govenor, Track My Ballot",
-      },
-      VA: {
-        name: "Virginia",
-        url: "https://ballotscout.org/partners/5a8f1161-23a0-4fa0-8ec9-3e090e97e9b3/va-search",
-        description: "Commonwealth of Virginia, Ballot Scout",
-      },
-      VI: {
-        name: "Virgin Islands",
-        hide: "yes",
-        url: "",
-        description: "",
-      },
-      VT: {
-        name: "Vermont",
-        url: "https://mvp.vermont.gov/",
-        description: "Vermont Secretary of State, My Voter Page",
-      },
-      WA: {
-        name: "Washington",
-        url: "https://voter.votewa.gov/WhereToVote.aspx",
-        description: "Vote WA",
-      },
-      WI: {
-        name: "Wisconsin",
-        url: "https://myvote.wi.gov/en-us/TrackMyBallot",
-        description: "MyVote Wisconsin",
-      },
-      WV: {
-        name: "West Virginia",
-        url: "https://services.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking",
-        description: "West Virginia Secretary of State",
-      },
-      WY: {
-        name: "Wyoming",
-        url: "https://sos.wyo.gov/Elections/Docs/WYCountyClerks_AbsRequest_VRChange.pdf",
-        description: "Contact your county clerk for the status of your absentee ballot.",
-      },
-    };
 
     function removeAllOn() {
       wordStates.forEach(function (el) {
@@ -622,7 +179,6 @@ Links to each state's ballot tracking found via Google and votesaveamerica.com
 
     function gotoState(el) {
       let state = el.id || el.getAttribute("data-state");
-      // console.log(state, trackers[state].url);
       location.href = trackers[state].url;
     }
 
@@ -634,10 +190,6 @@ Links to each state's ballot tracking found via Google and votesaveamerica.com
       el.addEventListener("mouseleave", function () {
         removeAllOn();
       });
-      // el.addEventListener("touchstart", function () {
-      //   removeAllOn();
-      //   addOnFromList(el);
-      // });
       el.addEventListener("click", function () {
         gotoState(el);
       });
@@ -651,10 +203,6 @@ Links to each state's ballot tracking found via Google and votesaveamerica.com
       el.addEventListener("mouseleave", function () {
         removeAllOn();
       });
-      // el.addEventListener("touchstart", function () {
-      //   removeAllOn();
-      //   addOnFromState(el);
-      // });
       el.addEventListener("click", function () {
         gotoState(el);
       });

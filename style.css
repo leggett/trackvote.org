@@ -1,0 +1,129 @@
+html {
+  font-family: "Georgia", sans-serif;
+  font-size: 18px;
+  background-color: #222;
+  color: #eee;
+}
+body {
+  padding: 20px 40px;
+}
+
+/* Header */
+#header {
+  margin: 20vh auto 50px auto;
+  width: fit-content;
+  max-width: 450px;
+  text-align: center;
+}
+#title {
+  font-size: 3rem;
+  letter-spacing: 0.07em;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+#tagline {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  margin-bottom: 30vh;
+  line-height: 1.6em;
+}
+
+/* Map */
+a[name] {
+  display: block;
+  padding-bottom: 50px;
+}
+svg {
+  display: block;
+  width: 100%;
+}
+#states *.on {
+  fill: #444;
+  cursor: pointer;
+}
+#states *.on[fill] {
+  cursor: not-allowed;
+  fill: #181818;
+}
+
+/* List of states */
+.list-of-states {
+  margin: 100px 0 0 0;
+  padding: 0;
+  columns: 170px auto;
+  column-gap: 16px;
+  list-style: none;
+}
+.list-of-states li {
+  padding: 8px;
+  display: inline-block;
+  width: 90%;
+  border-radius: 8px;
+  margin: 4px;
+  cursor: pointer;
+}
+.list-of-states li.on {
+  background: #ddd;
+  color: #222;
+}
+
+/* Footer */
+#footer {
+  margin: 100px 0 20px 10px;
+  opacity: 0.4;
+  color: white;
+  font-weight: normal;
+}
+a,
+a:visited {
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #292929;
+  border-radius: 10px;
+  border: 3px solid #222;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Mobile */
+@media screen and (max-device-width: 440px) {
+  html {
+    font-size: 40px;
+  }
+  #logo {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  #header {
+    max-width: 90%;
+  }
+  #title {
+    letter-spacing: 0.05em;
+  }
+  .list-of-states {
+    columns: 300px auto;
+  }
+  .list-of-states li {
+    padding: 16px;
+  }
+}
+@media screen and (min-device-width: 441px) and (max-device-width: 800px) {
+  html {
+    font-size: 24px;
+  }
+  #header {
+    margin: 5vh auto 50px auto;
+    max-width: 650px;
+  }
+  #tagline {
+    margin-bottom: 50px;
+  }
+}
