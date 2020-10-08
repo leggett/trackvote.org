@@ -10,7 +10,7 @@ body {
 
 /* Header */
 #header {
-  margin: 20vh auto 50px auto;
+  margin: 15vh auto 50px auto;
   width: fit-content;
   max-width: 450px;
   text-align: center;
@@ -24,7 +24,7 @@ body {
 #tagline {
   font-size: 1.2rem;
   opacity: 0.6;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
   line-height: 1.6em;
 }
 
@@ -69,7 +69,7 @@ svg {
 
 /* Footer */
 #footer {
-  margin: 100px 0 20px 10px;
+  margin: 100px 0 50px 12px;
   opacity: 0.4;
   color: white;
   font-weight: normal;
@@ -98,12 +98,15 @@ a:visited {
     font-size: 40px;
   }
   #logo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
   }
   #header {
     max-width: 90%;
+  }
+  #tagline {
+    font-size: 1.4rem;
   }
   #title {
     letter-spacing: 0.05em;
@@ -113,6 +116,9 @@ a:visited {
   }
   .list-of-states li {
     padding: 16px;
+  }
+  #footer {
+    margin-bottom: 100px;
   }
 }
 @media screen and (min-device-width: 441px) and (max-device-width: 800px) {
