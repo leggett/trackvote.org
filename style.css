@@ -113,10 +113,16 @@ html.showState #info {
 /* Footer */
 #footer {
   margin: 100px auto 50px auto;
-  opacity: 0.4;
   color: white;
   font-weight: normal;
   text-align: center;
+}
+#footer > * {
+  opacity: 0.4;
+  transition: opacity 100ms ease-in-out;
+}
+#footer > *:hover {
+  opacity: 1;
 }
 #footer a {
   margin: 0 8px;
