@@ -42,7 +42,7 @@ svg {
 }
 #states * {
   fill: transparent; /* rgba(34, 34, 34, 0.2); */
-  stroke: #afb8cb; /* rgba(204, 204, 204, 0.2); */
+  stroke: #9fb3e3; /* rgba(204, 204, 204, 0.2); */
   stroke-width: 1.5px;
 }
 #states circle {
@@ -52,11 +52,11 @@ svg {
   fill: rgba(0, 0, 0, 0.1);
 }
 #states *.on {
-  fill: rgba(204, 204, 204, 0.8);
+  fill: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 #states *.on.off {
-  fill: rgba(0, 0, 0, 0.5);
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 /* List of states */
