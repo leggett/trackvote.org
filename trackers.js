@@ -199,10 +199,11 @@ const trackers = {
   },
   NY: {
     name: "New York",
-    url: "https://nysballot.elections.ny.gov/TrackMyBallot/Search",
+    url: "#NY",
     description: "New York State Board of Elections",
+    html: "If you are a <b>military voter</b> or voting from overseas, you can track your ballot through the <a href='https://nysballot.elections.ny.gov/TrackMyBallot/Search'>NYSBallot Access</a>.<br><br> <b>New York City residents</b> can track their absentee ballot with <a href='https://nycabsentee.com/tracking'>https://nycabsentee.com/tracking</a>.<br><br><b>All other residents</b> are encouraged to contact their If you are voting by mail for another reason, you can confirm that your ballot was received by your local election authority by contacting their <a href='https://www.elections.ny.gov/CountyBoards.html'>county board of elections</a>."
   },
-  OH: {
+    OH: {
     name: "Ohio",
     url: "https://www.sos.state.oh.us/elections/voters/toolkit/ballot-tracking/",
     description: "Ohio Secretary of State (each county has its own tool)",
