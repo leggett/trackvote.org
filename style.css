@@ -41,7 +41,7 @@ svg {
   width: 100%;
 }
 #states * {
-  fill: rgba(34, 34, 34, 0.2);
+  fill: transparent; /* rgba(34, 34, 34, 0.2); */
   stroke: rgba(204, 204, 204, 0.2);
   stroke-width: 2px;
 }
@@ -49,14 +49,14 @@ svg {
   stroke-width: 4px !important;
 }
 #states *.off {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.1);
 }
 #states *.on {
-  fill: rgba(204, 204, 204, 0.2);
+  fill: rgba(204, 204, 204, 0.5);
   cursor: pointer;
 }
 #states *.on.off {
-  fill: #111;
+  fill: rgba(0, 0, 0, 0.5);
 }
 
 /* List of states */
