@@ -255,7 +255,7 @@ const trackers = {
     name: "Texas",
     url: "#TX",
     description: "",
-    html: "If you are a military voter or voting from overseas, you can track your ballot through the <a href='https://webservices.sos.state.tx.us/FPCA/index.aspx'>FPCA Ballot Tracker</a>.<br><br> If you are voting by mail for another reason and want to track the status of your ballot, <a href='https://www.sos.texas.gov/elections/voter/votregduties.shtml'>contact your county elections office</a>."
+    html: "Texas doesn't provide centralized tracking, but Texans can use <a href='https://txballot.org'>txballot.org</a> (reporting is delayed by a few days) or <a href='https://www.sos.texas.gov/elections/voter/votregduties.shtml'>contact your county elections office</a>.<br><br>If you are a military voter or voting from overseas, you can track your ballot through the <a href='https://webservices.sos.state.tx.us/FPCA/index.aspx'>FPCA Ballot Tracker</a>."
   },
   UT: {
     name: "Utah",
