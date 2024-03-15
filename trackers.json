@@ -300,7 +300,7 @@
       "name": "Washington",
       "code": "WA",
       "service": "Vote WA",
-      "url": "https://voter.votewa.gov/WhereToVote.aspx"
+      "url": "https://voter.votewa.gov"
     },
     {
       "name": "Washington, D.C.",

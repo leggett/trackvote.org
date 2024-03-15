@@ -280,7 +280,7 @@ const trackers = {
   },
   WA: {
     name: "Washington",
-    url: "https://voter.votewa.gov/WhereToVote.aspx",
+    url: "https://voter.votewa.gov",
     description: "Vote WA",
   },
   WI: {
