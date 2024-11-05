@@ -36,7 +36,7 @@
       "name": "Colorado",
       "code": "CO",
       "service": "Colorado Ballottrax",
-      "url": "https://colorado.ballottrax.net/voter/"
+      "url": "https://ballottrax.coloradosos.gov/voter/"
     },
     {
       "name": "Connecticut",
@@ -61,13 +61,13 @@
       "name": "Georgia",
       "code": "GA",
       "service": "Georgia Secretary of State, My Voter Page",
-      "url": "https://www.mvp.sos.ga.gov"
+      "url": "https://mvp.sos.ga.gov/s/"
     },
     {
       "name": "Hawaii",
       "code": "HI",
       "service": "Hawaii Office of Elections",
-      "url": "https://ballotstatus.hawaii.gov"
+      "url": "https://hawaii.ballottrax.net/voter/"
     },
     {
       "name": "Idaho",
@@ -306,7 +306,7 @@
       "name": "Washington, D.C.",
       "code": "DC",
       "service": "District of Columbia Board of Elections",
-      "url": "https://www.dcboe.org/Voters/Absentee-Voting/Track-Absentee-Ballot"
+      "url": "https://votedc.ballottrax.net/voter/"
     },
     {
       "name": "West Virginia",
