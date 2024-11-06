@@ -37,7 +37,7 @@ const trackers = {
   },
   CO: {
     name: "Colorado",
-    url: "https://colorado.ballottrax.net/voter/",
+    url: "https://ballottrax.coloradosos.gov/voter/",
     description: "Colorado Ballottrax",
   },
   CT: {
@@ -48,7 +48,7 @@ const trackers = {
   },
   DC: {
     name: "District of Columbia",
-    url: "https://www.dcboe.org/Voters/Absentee-Voting/Track-Absentee-Ballot",
+    url: "https://votedc.ballottrax.net/voter/",
     description: "District of Columbia Board of Elections",
   },
   DE: {
@@ -63,7 +63,7 @@ const trackers = {
   },
   GA: {
     name: "Georgia",
-    url: "https://www.mvp.sos.ga.gov",
+    url: "https://mvp.sos.ga.gov/s/",
     description: "Georgia Secretary of State, My Voter Page",
   },
   GU: {
@@ -74,7 +74,7 @@ const trackers = {
   },
   HI: {
     name: "Hawaii",
-    url: "https://ballotstatus.hawaii.gov",
+    url: "https://hawaii.ballottrax.net/voter/",
     description: "Hawaii Office of Elections",
   },
   IA: {
@@ -106,7 +106,7 @@ const trackers = {
   },
   KY: {
     name: "Kentucky",
-    url: "https://vrsws.sos.ky.gov/vic/",
+    url: "https://vrsws.sos.ky.gov/VIC/",
     description: "Kentucky State Board of Elections",
   },
   LA: {
@@ -153,8 +153,8 @@ const trackers = {
   },
   MS: {
     name: "Mississippi",
-    url: "#MS",
-    description: "",
+    url: "https://myelectionday.sos.state.ms.us/voteroutreach/pages/VoterRegistrationCheck.aspx",
+    description: "Mississippi Secretary of State",
     html: "You can check the status of your absentee ballot by <a href='https://www.sos.ms.gov/MSCountyElectionInfo/'>contacting your election official</a>.",
   },
   MT: {
@@ -179,7 +179,7 @@ const trackers = {
   },
   NH: {
     name: "New Hampshire",
-    url: "https://app.sos.nh.gov/Public/AbsenteeBallot.aspx",
+    url: "https://www.voteinnh.org/votetracker",
     description: "New Hampshire Secretary of State, Voter Information Look-up",
   },
   NJ: {
@@ -189,17 +189,17 @@ const trackers = {
   },
   NM: {
     name: "New Mexico",
-    url: "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx?tab=AbsenteeTracker",
+    url: "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx",
     description: "New Mexico Secretary of State",
   },
   NV: {
     name: "Nevada",
-    url: "https://www.nvsos.gov/votersearch/",
+    url: "https://nevada.ballottrax.net/voter/",
     description: "Nevada Secretary of State",
   },
   NY: {
     name: "New York",
-    url: "#NY",
+    url: "https://voterlookup.elections.ny.gov/",
     description: "New York State Board of Elections",
     html: "If you are a <b>military voter</b> or voting from overseas, you can track your ballot through the <a href='https://nysballot.elections.ny.gov/TrackMyBallot/Search'>NYSBallot Access</a>.<br><br> <b>New York City residents</b> can track their absentee ballot with <a href='https://nycabsentee.com/tracking'>https://nycabsentee.com/tracking</a>.<br><br><b>All other residents</b> are encouraged to contact your <a href='https://www.elections.ny.gov/CountyBoards.html'>county board of elections</a> to confirm that your ballot was received."
   },
@@ -210,7 +210,7 @@ const trackers = {
   },
   OK: {
     name: "Oklahoma",
-    url: "https://okvoterportal.okelections.us",
+    url: "https://okvoterportal.okelections.gov",
     description: "Oklahoma State Election Board, OK Voter Portal",
   },
   OR: {
@@ -237,7 +237,7 @@ const trackers = {
   },
   SC: {
     name: "South Carolina",
-    url: "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=AbsenteeInfo",
+    url: "https://vrems.scvotes.sc.gov/Voter/Login",
     description: "South Carolina Election Commission",
     provisional: "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=ProvisionalBallotInfo"
   },
@@ -253,7 +253,7 @@ const trackers = {
   },
   TX: {
     name: "Texas",
-    url: "#TX",
+    url: "https://teamrv-mvp.sos.texas.gov/BallotTrackerApp/#/login",
     description: "",
     html: "Texas doesn't provide centralized tracking, but Texans can use <a href='https://txballot.org'>txballot.org</a> (reporting is delayed by a few days) or <a href='https://www.sos.texas.gov/elections/voter/votregduties.shtml'>contact your county elections office</a>.<br><br>If you are a military voter or voting from overseas, you can track your ballot through the <a href='https://webservices.sos.state.tx.us/FPCA/index.aspx'>FPCA Ballot Tracker</a>."
   },
@@ -264,7 +264,7 @@ const trackers = {
   },
   VA: {
     name: "Virginia",
-    url: "https://ballotscout.org/partners/5a8f1161-23a0-4fa0-8ec9-3e090e97e9b3/va-search",
+    url: "https://vote.elections.virginia.gov/VoterInformation/Lookup/status",
     description: "Commonwealth of Virginia, Ballot Scout",
   },
   VI: {
@@ -285,12 +285,12 @@ const trackers = {
   },
   WI: {
     name: "Wisconsin",
-    url: "https://myvote.wi.gov/en-us/TrackMyBallot",
+    url: "https://myvote.wi.gov/en-us/My-Voter-Info",
     description: "MyVote Wisconsin",
   },
   WV: {
     name: "West Virginia",
-    url: "https://services.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking",
+    url: "https://apps.sos.wv.gov/Elections/voter/absenteeballottracking",
     description: "West Virginia Secretary of State",
   },
   WY: {

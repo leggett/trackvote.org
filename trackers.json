@@ -110,7 +110,7 @@
       "name": "Kentucky",
       "code": "KY",
       "service": "Kentucky State Board of Elections",
-      "url": "https://vrsws.sos.ky.gov/vic/"
+      "url": "https://vrsws.sos.ky.gov/VIC/"
     },
     {
       "name": "Louisiana",
@@ -151,8 +151,8 @@
     {
       "name": "Mississippi",
       "code": "MS",
-      "service": "",
-      "url": "",
+      "service": "Mississippi Secretary of State",
+      "url": "https://myelectionday.sos.state.ms.us/voteroutreach/pages/VoterRegistrationCheck.aspx",
       "note": "You can check the status of your absentee ballot by contacting your election official.",
       "source": "https://www.sos.ms.gov/MSCountyElectionInfo/"
     },
@@ -179,13 +179,13 @@
       "name": "Nevada",
       "code": "NV",
       "service": "Nevada Secretary of State",
-      "url": "https://www.nvsos.gov/votersearch/"
+      "url": "https://nevada.ballottrax.net/voter/"
     },
     {
       "name": "New Hampshire",
       "code": "NH",
       "service": "New Hampshire Secretary of State, Voter Information Look-up",
-      "url": "https://app.sos.nh.gov/Public/AbsenteeBallot.aspx"
+      "url": "https://www.voteinnh.org/votetracker"
     },
     {
       "name": "New Jersey",
@@ -197,14 +197,14 @@
       "name": "New Mexico",
       "code": "NM",
       "service": "New Mexico Secretary of State",
-      "url": "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx?tab=AbsenteeTracker",
+      "url": "https://voterportal.servis.sos.state.nm.us/WhereToVote.aspx",
       "vsa": "For voters using an absentee ballot, Intelligent Mail Barcodes will be used on all mailed ballots. This technology gives voters detailed information about the status of their ballot (when their application was received, when their ballot was sent to them, when it was received by their county clerk, etc.). This will allow you to track your absentee ballot from the application stage all the way to when it’s counted by your county clerk."
     },
     {
       "name": "New York",
       "code": "NY",
       "service": "New York State Board of Elections",
-      "url": "https://nysballot.elections.ny.gov/TrackMyBallot/Search"
+      "url": "https://voterlookup.elections.ny.gov/"
     },
     {
       "name": "North Carolina",
@@ -229,7 +229,7 @@
       "name": "Oklahoma",
       "code": "OK",
       "service": "Oklahoma State Election Board, OK Voter Portal",
-      "url": "https://okvoterportal.okelections.us"
+      "url": "https://okvoterportal.okelections.gov"
     },
     {
       "name": "Oregon",
@@ -254,8 +254,7 @@
       "name": "South Carolina",
       "code": "SC",
       "service": "South Carolina Election Commission",
-      "url": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=AbsenteeInfo",
-      "provisional": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=ProvisionalBallotInfo"
+      "url": "https://vrems.scvotes.sc.gov/Voter/Login"
     },
     {
       "name": "South Dakota",
@@ -273,7 +272,7 @@
       "name": "Texas",
       "code": "TX",
       "service": "",
-      "url": "",
+      "url": "https://teamrv-mvp.sos.texas.gov/BallotTrackerApp/#/login",
       "note": "If you are a Military voter or voting from overseas, you can track your ballot through the link here. If you are voting by mail for another reason and want to track the status of your ballot, contact your county elections office.",
       "military": "https://webservices.sos.state.tx.us/FPCA/index.aspx",
       "contact": "https://www.sos.texas.gov/elections/voter/votregduties.shtml"
@@ -294,7 +293,7 @@
       "name": "Virginia",
       "code": "VA",
       "service": "Commonwealth of Virginia, Ballot Scout",
-      "url": "https://ballotscout.org/partners/5a8f1161-23a0-4fa0-8ec9-3e090e97e9b3/va-search"
+      "url": "https://vote.elections.virginia.gov/VoterInformation/Lookup/status"
     },
     {
       "name": "Washington",
@@ -312,13 +311,13 @@
       "name": "West Virginia",
       "code": "WV",
       "service": "West Virginia Secretary of State",
-      "url": "https://services.sos.wv.gov/Elections/Voter/AbsenteeBallotTracking"
+      "url": "https://apps.sos.wv.gov/Elections/voter/absenteeballottracking"
     },
     {
       "name": "Wisconsin",
       "code": "WI",
       "service": "MyVote Wisconsin",
-      "url": "https://myvote.wi.gov/en-us/TrackMyBallot"
+      "url": "https://myvote.wi.gov/en-us/My-Voter-Info"
     },
     {
       "name": "Wyoming",
